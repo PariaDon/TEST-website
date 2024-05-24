@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ホームページ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="background-container">
+        <section class="section" id="section1">
+            <header>
+                <h1>〇〇のホームページへようこそ</h1>
+            </header>
+            <div class="background-container" style="background-image: url('images/IMG_0644.jpg');">
+                <div class="content">
+                    <h2>ホームページへようこそ</h2>
+                    <p>本文をここに記載する。</p>
+                    <nav>
+                        <ul>
+                            <li><a href="#section1">ホーム</a></li>
+                            <li><a href="#section2">問い合わせ</a></li>
+                            <li><a href="#section3">広報</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="section2">
+            <div class="background-container" style="background-image: url('images/IMG_0645.jpg');">
+                <div class="content">
+                    <h1>お問い合わせ</h1>
+                    <p>お問い合わせ内容をフォームに入力してください。</p>
+                    <form action="/send" method="post">
+                        <label for="name">お名前:</label><br>
+                        <input type="text" id="name" name="name" required><br>
+                        <label for="email">メールアドレス:</label><br>
+                        <input type="email" id="email" name="email" required><br>
+                        <label for="message">お問い合わせ内容:</label><br>
+                        <textarea id="message" name="message" rows="5" required></textarea><br>
+                        <input type="submit" value="送信">
+                    </form>
+                    <a href="index.html">ホームへ戻る</a>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="section3">
+            <div class="background-container" style="background-image: url('images/IMG_0646.jpg');">
+                <div class="content">
+                    <h1>広報ページ</h1>
+                    <p>2024年〇月X日</p>
+                    <p>広報内容をここに記載する。</p>
+                    <p>広報内容</p>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">ホーム</a></li>
+                            <li><a href="contact.html">問い合わせ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
