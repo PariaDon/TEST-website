@@ -1,0 +1,62 @@
+/* styles.css */
+
+/* 全体の基本設定 */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* スムーズなスクロールを有効にする */
+}
+
+/* セクションの設定 */
+.section {
+    height: 100vh; /* 画面全体の高さ */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+/* 背景コンテナ */
+.background-container {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+}
+
+/* ヘッダーのスタイル */
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* 半透明の背景 */
+    color: white;
+    padding: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* コンテンツの配置 */
+.content {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* 見出しのスタイル */
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+/* ナビゲーションリストのスタイル */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
